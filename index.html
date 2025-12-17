@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinh Nail - Mi｜小貞美甲・美睫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#A88B7D', // 奶茶深棕 (維持質感)
+              secondary: '#FFF0F5', // 淺粉背景 (呼應 Logo 水彩)
+              accent: '#E6A4B4', // 品牌粉色 (Logo 主色)
+              text: '#4A4A4A', // 深灰文字
+              rose: '#F3D2D2', // 柔粉
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Noto Sans TC"', 'sans-serif'],
+              script: ['"Dancing Script"', 'cursive'], // 新增手寫體
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFBF9;
+        color: #4A4A4A;
+        font-family: "Noto Sans TC", sans-serif;
+      }
+      
+      h1, h2, h3, h4 {
+        font-family: "Cormorant Garamond", serif;
+      }
+      
+      .brand-font {
+        font-family: "Dancing Script", cursive;
+      }
+
+      /* Elegant Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FFF0F5;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #E6A4B4;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #A88B7D;
+      }
+
+      /* Custom Form Inputs */
+      input[type="date"]::-webkit-calendar-picker-indicator,
+      input[type="time"]::-webkit-calendar-picker-indicator {
+        opacity: 0.4;
+        cursor: pointer;
+      }
+
+      .fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
